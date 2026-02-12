@@ -21,18 +21,45 @@
         color: white;
         font-family: "Poppins", sans-serif;
       }
-      nav{
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 80px;
+        background-color: rgb(8, 24, 77);
       }
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
       }
-      nav ul li{
+      nav ul li {
         list-style: none;
         margin: 20px;
+      }
+      .left {
+        font-size: 1.65rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 2rem;
+      }
+      .rightsection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rightsection img {
+        width: 90%;
+        transform: rotateY(180deg);
+        display: block;
       }
     </style>
   </head>
@@ -41,14 +68,25 @@
       <nav>
         <div class="left">Hasin's Portfolio</div>
         <div class="right">
-            <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>About</li>
-                <li>Contact Me</li>
-            </ul>
+          <ul>
+            <li>Home</li>
+            <li>Projects</li>
+            <li>About</li>
+            <li>Contact Me</li>
+          </ul>
         </div>
       </nav>
     </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, I am Hasin Ishrak
+          <div>I am a Competitive Programmer and Web Developer</div>
+        </div>
+        <div class="rightsection">
+          <img src="assets/im2.png" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
