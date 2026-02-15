@@ -3,10 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+}
 body {
   background-color: rgb(3, 10, 36);
   color: white;
   font-family: "Poppins", sans-serif;
+   display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
 }
 nav {
   display: flex;
@@ -84,20 +92,17 @@ main hr {
   max-width: 80vw;
   margin: 60px auto;
 }
-
 .common-section h2 {
   font-size: 1.8rem;
   margin-bottom: 30px;
   color: rgb(195, 147, 239);
 }
-
 .card-box {
   background-color: rgb(8, 24, 77);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
 .skills-container span {
   display: inline-block;
   background: rgb(195, 147, 239);
@@ -107,14 +112,12 @@ main hr {
   border-radius: 20px;
   font-size: 0.9rem;
 }
-
 .cp-links a {
   display: block;
   margin-bottom: 10px;
   text-decoration: none;
   color: white;
 }
-
 .cp-links a:hover {
   color: rgb(195, 147, 239);
 }
@@ -124,7 +127,6 @@ main hr {
   gap: 25px;
   align-items: center;
 }
-
 .cp-logos a {
   background: rgb(8, 24, 77);
   padding: 15px;
@@ -132,11 +134,9 @@ main hr {
   transition: transform 0.3s ease;
   display: inline-block;
 }
-
 .cp-logos a:hover {
   transform: scale(1.12);
 }
-
 .cp-logos img {
   width: 80px;
   height: 80px;
