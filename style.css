@@ -192,7 +192,6 @@ main hr {
   box-shadow: 0 0 12px rgba(195, 147, 239, 0.15);
   transition: 0.3s ease;
 }
-
 .timeline-content:hover {
   transform: translateX(5px);
   box-shadow: 0 0 20px rgba(195, 147, 239, 0.3);
@@ -205,19 +204,16 @@ main hr {
   font-family: 'Poppins', sans-serif;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
 }
-
 .site-footer .footer-content {
   max-width: 800px;
   margin: auto;
 }
-
 .site-footer .footer-name {
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(195, 147, 239);
   margin-bottom: 8px;
 }
-
 .site-footer hr {
   border: 0;
   height: 1px;
@@ -225,7 +221,6 @@ main hr {
   width: 50px;
   margin: 8px auto;
 }
-
 .site-footer .footer-note {
   font-size: 0.9rem;
   color: #aaa;
