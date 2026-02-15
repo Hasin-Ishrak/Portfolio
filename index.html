@@ -54,7 +54,7 @@
         color: rgb(153, 153, 226);
         font-size: 1.1rem;
       }
-      main hr{
+      main hr {
         border: 0;
         background-color: rgb(134, 107, 177);
         height: 1.2px;
@@ -91,9 +91,84 @@
       #element {
         color: rgb(195, 147, 239);
       }
-      .secondsection{
+      .common-section {
         max-width: 80vw;
-        margin: auto;
+        margin: 60px auto;
+      }
+
+      .common-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        color: rgb(195, 147, 239);
+      }
+
+      .card-box {
+        background-color: rgb(8, 24, 77);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .skills-container span {
+        display: inline-block;
+        background: rgb(195, 147, 239);
+        color: black;
+        padding: 6px 14px;
+        margin: 6px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+      }
+
+      .cp-links a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: white;
+      }
+
+      .cp-links a:hover {
+        color: rgb(195, 147, 239);
+      }
+      .cp-logos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        align-items: center;
+      }
+
+      .cp-logos a {
+        background: rgb(8, 24, 77);
+        padding: 15px;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+        display: inline-block;
+      }
+
+      .cp-logos a:hover {
+        transform: scale(1.1);
+      }
+
+      .cp-logos img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+      }
+      .cpdescriptions {
+        margin-top: 35px;
+        padding: 25px 30px;
+        background: linear-gradient(145deg, rgb(10, 28, 90), rgb(6, 18, 60));
+        border-left: 4px solid rgb(195, 147, 239);
+        border-radius: 12px;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #dcdcdc;
+        box-shadow: 0 0 15px rgba(195, 147, 239, 0.15);
+        transition: 0.3s ease;
+      }
+
+      .cpdescriptions:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(195, 147, 239, 0.3);
       }
     </style>
   </head>
@@ -123,9 +198,96 @@
           <img src="assets/im2.png" alt="" />
         </div>
       </section>
-      <hr>
-      <section class="secondsection">
-        <h1> Experiences </h1>
+      <hr />
+      <!-- SKILLS -->
+      <section class="common-section" id="skills">
+        <h2>Skills</h2>
+        <div class="card-box skills-container">
+          <span>Java</span>
+          <span>C++</span>
+          <span>JavaScript</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>React</span>
+          <span>MySQL</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+        </div>
+      </section>
+      <hr />
+      <!-- COMPETITIVE PROGRAMMING -->
+      <section class="common-section" id="cp">
+        <h2>Competitive Programming</h2>
+
+        <div class="card-box cp-logos">
+          <a href="https://codeforces.com/profile/Hasin_Ishrak" target="_blank">
+            <img
+              src="https://sta.codeforces.com/s/91866/images/codeforces-logo-with-telegram.png"
+              alt="Codeforces"
+            />
+          </a>
+          <a href="https://www.codechef.com/users/ishrak0hasin" target="_blank">
+            <img
+              src="https://cdn.codechef.com/images/cc-logo.svg"
+              alt="CodeChef"
+            />
+          </a>
+
+          <a href="https://leetcode.com/u/ishrak0hasin/" target="_blank">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+              alt="LeetCode"
+            />
+          </a>
+
+          <a
+            href="https://www.hackerrank.com/profile/ishrakhasin758"
+            target="_blank"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/65/HackerRank_logo.png"
+              alt="HackerRank"
+            />
+          </a>
+
+          <a href="https://atcoder.jp/users/ishrak0hasin" target="_blank">
+            <img
+              src="https://img.atcoder.jp/assets/atcoder.png"
+              alt="AtCoder"
+            />
+          </a>
+
+          <a
+            href="https://www.hackerearth.com/@ishrakhasin758/"
+            target="_blank"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e8/HackerEarth_logo.png"
+              alt="HackerEarth"
+            />
+          </a>
+        </div>
+        <div class="cpdescriptions">
+          Driven by a <span class="purple">Consistency-First</span> mindset, I
+          have maintained a 200+ day streak in competitive programming, solving
+          over 1500 problems across multiple platforms. As a
+          <span class="purple">3★ CodeChef Coder</span> and
+          <span class="purple">Green Codeforces Specialist</span>, I focus on
+          breaking complex problems into elegant solutions while optimizing
+          performance under contest pressure. Competitive programming, for me,
+          is not just about ratings — it’s about daily growth and sharpening
+          analytical thinking.
+        </div>
+      </section>
+      <hr />
+      <!-- ACHIEVEMENTS -->
+      <section class="common-section" id="achievements">
+        <h2>Achievements</h2>
+        <div class="card-box">
+          <p>🏆 Math Olympiad Champion</p>
+          <p>🥈 Biology Olympiad – First Runner Up</p>
+          <p>🥈 Sudoku Olympiad – First Runner Up</p>
+        </div>
       </section>
     </main>
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
