@@ -19,157 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: rgb(3, 10, 36);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(8, 24, 77);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 20px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: aliceblue;
-      }
-      nav ul li a:hover {
-        color: rgb(153, 153, 226);
-        font-size: 1.1rem;
-      }
-      main hr {
-        border: 0;
-        background-color: rgb(134, 107, 177);
-        height: 1.2px;
-        margin: 40px 92px;
-      }
-      .left {
-        font-size: 1.65rem;
-      }
-      .firstsection {
-        display: flex;
-        justify-content: space-around;
-        margin: 120px 0;
-        align-items: center;
-      }
-      .firstsection > div {
-        width: 30%;
-      }
-      .leftsection {
-        font-size: 2rem;
-      }
-      .rightsection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .rightsection img {
-        width: 90%;
-        transform: rotateY(180deg);
-        display: block;
-      }
-      .purple {
-        color: rgb(195, 147, 239);
-      }
-      #element {
-        color: rgb(195, 147, 239);
-      }
-      .common-section {
-        max-width: 80vw;
-        margin: 60px auto;
-      }
-
-      .common-section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
-        color: rgb(195, 147, 239);
-      }
-
-      .card-box {
-        background-color: rgb(8, 24, 77);
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 20px;
-      }
-
-      .skills-container span {
-        display: inline-block;
-        background: rgb(195, 147, 239);
-        color: black;
-        padding: 6px 14px;
-        margin: 6px;
-        border-radius: 20px;
-        font-size: 0.9rem;
-      }
-
-      .cp-links a {
-        display: block;
-        margin-bottom: 10px;
-        text-decoration: none;
-        color: white;
-      }
-
-      .cp-links a:hover {
-        color: rgb(195, 147, 239);
-      }
-      .cp-logos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-        align-items: center;
-      }
-
-      .cp-logos a {
-        background: rgb(8, 24, 77);
-        padding: 15px;
-        border-radius: 12px;
-        transition: transform 0.3s ease;
-        display: inline-block;
-      }
-
-      .cp-logos a:hover {
-        transform: scale(1.1);
-      }
-
-      .cp-logos img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-      }
-      .cpdescriptions {
-        margin-top: 35px;
-        padding: 25px 30px;
-        background: linear-gradient(145deg, rgb(10, 28, 90), rgb(6, 18, 60));
-        border-left: 4px solid rgb(195, 147, 239);
-        border-radius: 12px;
-        font-size: 1rem;
-        line-height: 1.8;
-        color: #dcdcdc;
-        box-shadow: 0 0 15px rgba(195, 147, 239, 0.15);
-        transition: 0.3s ease;
-      }
-      .cpdescriptions:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0 25px rgba(195, 147, 239, 0.3);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -198,8 +48,37 @@
         </div>
       </section>
       <hr />
+      <!-- education -->
+      <section class="secondsection">
+        <span class="grey">Cultivating Perspective</span>
+        <h2>Education</h2>
+        <div class="box">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              Secondary School Certificate –
+              <span class="purple">Mymensingh Zilla School</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              Higher Secondary Certificate –
+              <span class="purple">Ananda Mohan College, Mymensingh</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              Pursuing B.Sc.(Eng) in Software Engineering –
+              <span class="purple"
+                >Shahjalal University of Science and Technology</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
       <!-- SKILLS -->
       <section class="common-section" id="skills">
+        <span class="grey">Fluency in Technology</span>
         <h2>Skills</h2>
         <div class="card-box skills-container">
           <span>Java</span>
@@ -216,6 +95,7 @@
       <hr />
       <!-- COMPETITIVE PROGRAMMING -->
       <section class="common-section" id="cp">
+        <span class="grey">Algorithmic Artistry</span>
         <h2>Competitive Programming</h2>
 
         <div class="card-box cp-logos">
@@ -255,7 +135,6 @@
               alt="AtCoder"
             />
           </a>
-
           <a
             href="https://www.hackerearth.com/@ishrakhasin758/"
             target="_blank"
@@ -266,7 +145,7 @@
             />
           </a>
         </div>
-        <div class="cpdescriptions">
+        <div class="descriptions">
           Driven by a <span class="purple">Consistency-First</span> mindset, I
           have maintained a 200+ day streak in competitive programming, solving
           over <span class="purple">1600 problems </span> across multiple
@@ -281,8 +160,9 @@
       <hr />
       <!-- ACHIEVEMENTS -->
       <section class="common-section" id="achievements">
+        <span class="grey">Evidence of Excellence</span>
         <h2>Achievements</h2>
-        <div class="card-box">
+        <div class="descriptions">
           <p>🏆 Math Olympiad Champion</p>
           <p>🥈 Biology Olympiad – First Runner Up</p>
           <p>🥈 Sudoku Olympiad – First Runner Up</p>
