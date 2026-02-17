@@ -3,14 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
   background-color: rgb(3, 10, 36);
   color: white;
   font-family: "Poppins", sans-serif;
-   display: flex;
+  display: flex;
   flex-direction: column;
 }
 main {
@@ -39,6 +40,11 @@ nav ul li a:hover {
   color: rgb(153, 153, 226);
   font-size: 1.1rem;
 }
+nav ul li a.active {
+  color: rgb(195, 147, 239);
+  border-bottom: 2px solid rgb(195, 147, 239);
+  padding-bottom: 3px;
+}
 main hr {
   border: 0;
   background-color: rgb(134, 107, 177);
@@ -66,7 +72,8 @@ main hr {
   align-items: center;
 }
 .rightsection img {
-  width: 90%;
+  border-radius: 30%;
+  width: 95%;
   transform: rotateY(180deg);
   display: block;
 }
@@ -98,17 +105,26 @@ main hr {
   color: rgb(195, 147, 239);
 }
 .card-box {
-  background-color: rgb(8, 24, 77);
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  margin-top: 35px;
+  padding: 30px;
+  background: linear-gradient(145deg, rgb(10, 28, 90), rgb(6, 18, 60));
+  border-left: 4px solid rgb(195, 147, 239);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(195, 147, 239, 0.15);
+  transition: 0.3s ease;
 }
+
+.card-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(195, 147, 239, 0.3);
+}
+
 .skills-container span {
   display: inline-block;
   background: rgb(195, 147, 239);
   color: black;
   padding: 8px 30px;
-  margin: 6px;
+  margin: 5px;
   border-radius: 20px;
   font-size: 0.9rem;
 }
@@ -124,7 +140,7 @@ main hr {
 .cp-logos {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 83px;
   align-items: center;
 }
 .cp-logos a {
@@ -230,7 +246,7 @@ main hr {
   display: flex;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 .contact-box {
