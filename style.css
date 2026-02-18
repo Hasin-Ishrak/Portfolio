@@ -368,3 +368,58 @@ main hr {
 .contact-box:hover i {
   color: rgb(195, 147, 239);
 }
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: linear-gradient(to right, #8E75B9, #C393EF);
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
+/* ===== MOBILE NAVBAR ===== */
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  nav {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: rgb(8, 24, 77);
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  body.light-mode nav ul {
+    background: #ffffff;
+  }
+}
