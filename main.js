@@ -6,27 +6,6 @@ navLinks.forEach(link => {
     link.classList.add("active");
   }
 });
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  });
-});
-const reveals = document.querySelectorAll(".common-section, .descriptions");
-
-function revealOnScroll() {
-  const windowHeight = window.innerHeight;
-
-  reveals.forEach(element => {
-    const elementTop = element.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
-      element.classList.add("active");
-      element.classList.add("reveal");
-    }
-  });
-}
 const typedElement = document.querySelector("#element");
 
 if (typedElement) {
