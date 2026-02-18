@@ -97,6 +97,26 @@ body.light-mode .theme-btn:hover {
   background: #8E75B9;
   color: white;
 }
+body.light-mode .preview-btn {
+  color: #6C4AB6;
+  border-color: #8E75B9;
+}
+
+body.light-mode .preview-btn:hover {
+  background: #8E75B9;
+  color: white;
+}
+
+body.light-mode .download-btn {
+  background: #8E75B9;
+  border-color: #8E75B9;
+  color: white;
+}
+
+body.light-mode .download-btn:hover {
+  background: transparent;
+  color: #6C4AB6;
+}
 main {
   flex: 1;
 }
@@ -132,7 +152,7 @@ main hr {
   border: 0;
   background-color: rgb(134, 107, 177);
   height: 1.5px;
-  margin: 70px 110px;
+  margin: 50px 110px;
 }
 
 
@@ -145,9 +165,14 @@ main hr {
   margin: 120px 0;
   align-items: center;
 }
-.firstsection > div {
+.firstsection > .leftsection {
+  width: 25%;
+}
+
+.firstsection > .rightsection {
   width: 30%;
 }
+
 .leftsection {
   font-size: 2rem;
 }
@@ -422,4 +447,41 @@ main hr {
   body.light-mode nav ul {
     background: #ffffff;
   }
+}
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border: 2px solid rgb(195, 147, 239);
+}
+
+.preview-btn {
+  background: transparent;
+  color: rgb(195, 147, 239);
+}
+.preview-btn:hover {
+  background: rgb(195, 147, 239);
+  color: black;
+  box-shadow: 0 0 20px rgba(195, 147, 239, 0.4);
+}
+
+.download-btn {
+  background: rgb(195, 147, 239);
+  color: black;
+}
+.download-btn:hover {
+  background: transparent;
+  color: rgb(195, 147, 239);
+  box-shadow: 0 0 20px rgba(195, 147, 239, 0.4);
 }
